@@ -18,7 +18,7 @@ public class FilteringApples {
                 new Apple(120, "red")
         );
 
-        var apple = filterApples(inventory, FilteringApples::isGreenApple);
+        var apple = filterApples(inventory, FilteringApples::isHeavyApple);
         log.info("Apple: {}", apple);
 
     }
