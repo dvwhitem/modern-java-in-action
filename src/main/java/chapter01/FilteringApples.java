@@ -18,9 +18,10 @@ public class FilteringApples {
                 new Apple(120, "red")
         );
 
-        var apple = filterApples(inventory, FilteringApples::isHeavyApple);
-        log.info("Apple: {}", apple);
-
+        var apple1 = filterApples(inventory, FilteringApples::isHeavyApple);
+        log.info("Apple 1: {}", apple1);
+        var apple2 = filterApples(inventory, (Apple a) -> "red".equals(a.color()));
+        log.info("Apple 2: {}", apple2);
     }
 
     public static boolean isGreenApple(Apple apple) {
