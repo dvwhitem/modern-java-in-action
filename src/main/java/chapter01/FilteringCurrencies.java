@@ -2,7 +2,7 @@ package chapter01;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.Arrays;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,7 +18,8 @@ public class FilteringCurrencies {
                 new Transaction(2.0, new Currency("AUD")),
                 new Transaction(76.4, new Currency("UAH")),
                 new Transaction(345.3, new Currency("USD")),
-                new Transaction(15.4, new Currency("AUD")));
+                new Transaction(15.4, new Currency("AUD")),
+                new Transaction(655.4, new Currency("AUD")));
         List<Currency> currencies = List.of(new Currency("UAH"), new Currency("USD"), new Currency("GBP"), new Currency("AUD"));
 
         var transactionsByCurrencies = transactions
